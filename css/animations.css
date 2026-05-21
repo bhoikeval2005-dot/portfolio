@@ -1,0 +1,89 @@
+/* ═══════════════════════════════════════
+   KEYFRAMES
+═══════════════════════════════════════ */
+@keyframes scrollLine {
+  0%   { left: -100%; }
+  100% { left: 100%; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ═══════════════════════════════════════
+   REVEAL CLASSES (Intersection Observer)
+═══════════════════════════════════════ */
+.reveal-up,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-up    { transform: translateY(40px); }
+.reveal-left  { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+
+.reveal-up.visible,
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Delay utilities */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.35s; }
+.delay-4 { transition-delay: 0.5s; }
+.delay-5 { transition-delay: 0.65s; }
+
+/* Hero text is revealed immediately on load */
+.hero .reveal-up {
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+.hero .reveal-up.delay-1 { animation-delay: 0.1s; }
+.hero .reveal-up.delay-2 { animation-delay: 0.25s; }
+.hero .reveal-up.delay-3 { animation-delay: 0.4s; }
+.hero .reveal-up.delay-4 { animation-delay: 0.55s; }
+.hero .reveal-up.delay-5 { animation-delay: 0.7s; }
+
+/* Remove IntersectionObserver class requirement for hero */
+.hero .reveal-up.visible { animation: none; opacity: 1; transform: none; }
+
+/* ═══════════════════════════════════════
+   HOVER MICRO-INTERACTIONS
+═══════════════════════════════════════ */
+.project-card { transition: background 0.35s ease, transform 0.35s ease; }
+.project-card:hover { transform: translateY(-2px); }
+
+.tag, .btn-primary, .btn-ghost, .contact-link, .nav-link {
+  will-change: transform;
+}
+
+/* Skill bar animation trigger */
+.skill-bar-fill.animate {
+  width: var(--target-width) !important;
+}

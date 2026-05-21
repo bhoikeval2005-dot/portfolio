@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">DEV<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-content">
+      <p class="hero-tag reveal-up">— Full Stack Developer</p>
+      <h1 class="hero-title">
+        <span class="line reveal-up delay-1">BUILDING</span>
+        <span class="line accent reveal-up delay-2">DIGITAL</span>
+        <span class="line reveal-up delay-3">EXPERIENCES</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-4">
+        Clean code. Bold design. Real results.<br/>
+        Based in India — available worldwide.
+      </p>
+      <div class="hero-cta reveal-up delay-5">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-ghost">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-counter">
+      <div class="counter-item"><span class="count">10+</span><span class="count-label">Projects</span></div>
+      <div class="counter-item"><span class="count">3+</span><span class="count-label">Years Exp</span></div>
+      <div class="counter-item"><span class="count">100%</span><span class="count-label">Passion</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">01 / About</div>
+      <div class="about-grid">
+        <div class="about-photo reveal-left">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="80" r="40" fill="#e8ff00" opacity="0.15"/>
+                <circle cx="100" cy="80" r="40" stroke="#e8ff00" stroke-width="1.5"/>
+                <path d="M40 180c0-33.1 26.9-60 60-60s60 26.9 60 60" stroke="#e8ff00" stroke-width="1.5"/>
+              </svg>
+              <p class="photo-hint">Add your photo to<br/>assets/images/profile.jpg</p>
+            </div>
+          </div>
+          <div class="photo-tag">AVAILABLE FOR HIRE</div>
+        </div>
+        <div class="about-text reveal-right">
+          <h2 class="section-title">WHO I AM</h2>
+          <p>A passionate full-stack developer with a sharp eye for design and a love for writing clean, efficient code. I build things that live on the internet — from pixel-perfect UIs to robust backends.</p>
+          <p>When I'm not coding, I'm exploring new frameworks, contributing to open source, or obsessing over typography.</p>
+          <div class="about-details">
+            <div class="detail"><span class="detail-key">Name</span><span class="detail-val">Your Name</span></div>
+            <div class="detail"><span class="detail-key">Location</span><span class="detail-val">Surat, Gujarat</span></div>
+            <div class="detail"><span class="detail-key">Email</span><span class="detail-val">you@email.com</span></div>
+            <div class="detail"><span class="detail-key">Status</span><span class="detail-val"><span class="dot"></span>Open to work</span></div>
+          </div>
+          <a href="#" class="btn-primary" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal-up">02 / Skills</div>
+      <h2 class="section-title reveal-up">TECH STACK</h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal-up delay-1">
+          <h3 class="cat-title">Frontend</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-skill="HTML / CSS" data-level="95"></div>
+            <div class="skill-bar" data-skill="JavaScript" data-level="88"></div>
+            <div class="skill-bar" data-skill="React" data-level="80"></div>
+          </div>
+        </div>
+        <div class="skill-category reveal-up delay-2">
+          <h3 class="cat-title">Backend</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-skill="Node.js" data-level="78"></div>
+            <div class="skill-bar" data-skill="Python" data-level="72"></div>
+            <div class="skill-bar" data-skill="SQL / MongoDB" data-level="75"></div>
+          </div>
+        </div>
+        <div class="skill-category reveal-up delay-3">
+          <h3 class="cat-title">Tools</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-skill="Git / GitHub" data-level="90"></div>
+            <div class="skill-bar" data-skill="VS Code" data-level="95"></div>
+            <div class="skill-bar" data-skill="Figma" data-level="65"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-tags reveal-up">
+        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+        <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Python</span>
+        <span class="tag">Git</span><span class="tag">MongoDB</span><span class="tag">REST API</span>
+        <span class="tag">Figma</span><span class="tag">Linux</span><span class="tag">Docker</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">03 / Projects</div>
+      <h2 class="section-title reveal-up">SELECTED WORK</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal-up">04 / Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left reveal-left">
+          <h2 class="section-title">LET'S<br/><span class="accent">TALK.</span></h2>
+          <p>Have a project in mind? Looking to hire? Or just want to say hi? My inbox is always open.</p>
+          <div class="contact-links">
+            <a href="mailto:you@email.com" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              you@email.com
+            </a>
+            <a href="https://github.com/" target="_blank" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              github.com/yourusername
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/you
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="off"/>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="off"/>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="submitBtn">Send Message</button>
+            <div class="form-success" id="formSuccess">✓ Message sent! I'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">DEV<span class="accent">.</span></div>
+        <p class="footer-copy">© 2026 — Crafted with precision & coffee.</p>
+        <div class="footer-links">
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+          <a href="mailto:you@email.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
